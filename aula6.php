@@ -2,7 +2,7 @@
     //Funções
 
     //Declaracao basica
-    function Apresentacao()
+    /* function Apresentacao()
     {
         
         echo "<script>
@@ -73,7 +73,7 @@
             return false;
         }
 
-    }
+    } *//* 
 
     MeApresento("Vitor");
 
@@ -87,7 +87,48 @@
     echo
     "<script>
         alert('$resultado');
-     </script>";
+     </script>"; */
 
+    $string = "eu não sei Alnaldinho";
+
+    $nomeCompleto = "vitor_gABRiel_de-SOUZA-aleNCAR";
+
+    echo strtoupper($string) . "<br>"; 
+    // Resuttado disso é todas as letras maisculas
+
+    echo strtolower($nomeCompleto) . "<br>";
+    //Resultado deixa toda a string com letras minusculas
+
+    $newName = strtolower($nomeCompleto);
+    echo ucwords($newName) . "<br>";
+    //Resultado deixa as primeiras letras de palavras (ou seja, uniao de caracteres separados por espaço) em maiusculo
+
+    echo ucfirst($newName) . "<br>";
+    //Deixa somente a primeira letra da string toda maiscula
+
+    $novoNome = "Sherlock Holmes";
+    $letras = str_split($novoNome, 3);
+
+
+
+    foreach ($letras as $l)
+    {
+        echo $l . "<br>";
+    }
+
+    $partesDoNome = explode("_", $newName);
+
+    echo "Meu segundo nome: " . $partesDoNome[1] . "<br>";
+
+    echo strlen("Arnaldinho") . "<br>";
+
+    date_default_timezone_set('America/Sao_Paulo');
+
+    $dataAgora = date("d_M_Y");
+
+    $horaAgora = date("G-i");
+
+    echo $dataAgora . "<br>";
+    echo $horaAgora . "<br>";
 
 ?>
